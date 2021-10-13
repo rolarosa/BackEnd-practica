@@ -12,10 +12,11 @@
               <div class="col-4">
                 <div class="text-left">
                     <h1 class="my-0 txt-black mb-4">login</h1>
-                    <form>
-                      <input type="text" class="form-control mb-4" placeholder="Nombre" id="name">
-                      <input type="text" class="form-control mb-4" placeholder="Teléfono" id="phone">
+                    <form method="post" action="loguearse.php">
+                      <input type="text" name="dni" class="form-control mb-4" placeholder="DNI">
+                      <input type="password" name="password" class="form-control mb-4" placeholder="Contraseña">
                       <button type="submit" class="btn btn-login btn-block">Ingresar</button>
+                      <h5 class="mt-3"> ¿No tenés cuenta? <a href="registro.php">Registrate!</a></h5>
                     </form>
                 </div>
               </div>
